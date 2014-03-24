@@ -1,0 +1,25 @@
+# Logfile created on 2014-03-24 11:30:50 +0000 by logger.rb/44203
+I, [2014-03-24T11:30:50.873327 #49482]  INFO -- : 0:  addressable (2.3.6) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/addressable-2.3.6.gemspec
+I, [2014-03-24T11:30:55.295410 #49482]  INFO -- : 0:  bcrypt (3.1.7) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/bcrypt-3.1.7.gemspec
+I, [2014-03-24T11:30:57.274260 #49482]  INFO -- : 0:  bcrypt-ruby (3.1.5) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/bcrypt-ruby-3.1.5.gemspec
+I, [2014-03-24T11:31:00.075265 #49482]  INFO -- : 0:  dm-core (1.2.1) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/dm-core-1.2.1.gemspec
+I, [2014-03-24T11:31:02.183418 #49482]  INFO -- : 0:  dm-aggregates (1.2.0) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/dm-aggregates-1.2.0.gemspec
+I, [2014-03-24T11:31:04.396033 #49482]  INFO -- : 0:  dm-constraints (1.2.0) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/dm-constraints-1.2.0.gemspec
+I, [2014-03-24T11:31:06.858328 #49482]  INFO -- : 0:  dm-migrations (1.2.0) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/dm-migrations-1.2.0.gemspec
+I, [2014-03-24T11:31:09.499398 #49482]  INFO -- : 0:  fastercsv (1.5.5) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/fastercsv-1.5.5.gemspec
+I, [2014-03-24T11:31:09.499885 #49482]  INFO -- : 0:  json (1.8.1) from /Users/hannahcrwight/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/specifications/default/json-1.8.1.gemspec
+I, [2014-03-24T11:31:12.474096 #49482]  INFO -- : 0:  json_pure (1.8.1) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/json_pure-1.8.1.gemspec
+I, [2014-03-24T11:31:15.748909 #49482]  INFO -- : 0:  multi_json (1.9.2) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.9.2.gemspec
+I, [2014-03-24T11:31:17.864063 #49482]  INFO -- : 0:  dm-serializer (1.2.2) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/dm-serializer-1.2.2.gemspec
+I, [2014-03-24T11:31:19.422098 #49482]  INFO -- : 0:  dm-timestamps (1.2.0) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/dm-timestamps-1.2.0.gemspec
+I, [2014-03-24T11:31:21.064035 #49482]  INFO -- : 0:  dm-transactions (1.2.0) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/dm-transactions-1.2.0.gemspec
+I, [2014-03-24T11:31:24.610645 #49482]  INFO -- : 0:  stringex (1.5.1) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/stringex-1.5.1.gemspec
+I, [2014-03-24T11:31:27.820386 #49482]  INFO -- : 0:  uuidtools (2.1.4) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/uuidtools-2.1.4.gemspec
+I, [2014-03-24T11:31:30.178611 #49482]  INFO -- : 0:  dm-types (1.2.2) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/dm-types-1.2.2.gemspec
+I, [2014-03-24T11:31:32.553503 #49482]  INFO -- : 0:  dm-validations (1.2.0) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/dm-validations-1.2.0.gemspec
+I, [2014-03-24T11:31:34.249372 #49482]  INFO -- : 0:  data_mapper (1.2.0) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/data_mapper-1.2.0.gemspec
+I, [2014-03-24T11:31:36.246523 #49482]  INFO -- : 0:  data_objects (0.10.14) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/data_objects-0.10.14.gemspec
+I, [2014-03-24T11:31:39.147623 #49482]  INFO -- : 0:  dm-do-adapter (1.2.0) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/dm-do-adapter-1.2.0.gemspec
+I, [2014-03-24T11:31:43.670815 #49482]  INFO -- : 0:  do_postgres (0.10.14) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/do_postgres-0.10.14.gemspec
+I, [2014-03-24T11:31:50.374938 #49482]  INFO -- : 0:  dm-postgres-adapter (1.2.0) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0/specifications/dm-postgres-adapter-1.2.0.gemspec
+I, [2014-03-24T11:31:50.375576 #49482]  INFO -- : 0:  bundler (1.5.1) from /Users/hannahcrwight/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
