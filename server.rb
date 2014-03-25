@@ -13,6 +13,9 @@ DataMapper.finalize
 
 DataMapper.auto_upgrade!
 
+enable :sessions
+set :session_secret, "totally secret like for real"
+
 class BookmarkManager < Sinatra::Application
 
 	get '/' do
