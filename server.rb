@@ -20,6 +20,15 @@ use Rack::Flash, :accessorize => [:notice]
 enable :sessions
 set :session_secret, "totally secret like for real"
 
+def self.authenticate(email, password)
+  user = first(:email => email)
+  if user && BCrypt::Password.new(user.password_digest) == password
+   	user
+ 	else
+   	nil
+ 	end
+end
+
 class BookmarkManager < Sinatra::Application
 
 	get '/' do
@@ -62,6 +71,23 @@ class BookmarkManager < Sinatra::Application
     	erb :"users/new"
   	end
 	end
+
+	get '/sessions/new' do
+		#
+		erb :"sessions/new"
+	end
+
+	post '/sessions' do
+  	email, password = params[:email], params[:password]
+  	user = User.authenticate(email, password)
+  	if user
+    	session[:user_id] = user.id
+    	redirect to('/')
+  	else
+    	flash[:errors] = ["The email or password is incorrect"]
+    	erb :"sessions/new"
+  	end
+	end	
 end
 
 helpers do
