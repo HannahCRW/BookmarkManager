@@ -1,4 +1,9 @@
 <html>
+	<div>
+		<% if flash[:notice] %>
+ 			 <div id="notice"><%= flash[:notice] %></div>
+		<% end %>
+	</div>
 <h1>Please sign up</h1>
 	<form action="/users" method ="post">
 		Email: <input name="email" type="text">

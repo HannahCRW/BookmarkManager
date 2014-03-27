@@ -1,5 +1,6 @@
 require "data_mapper"
 require 'sinatra'
+require 'rack-flash'
 
 
 env = ENV["RACK_ENV"] || "development"
@@ -13,6 +14,8 @@ require './lib/user'
 DataMapper.finalize
 
 DataMapper.auto_upgrade!
+
+use Rack::Flash, :accessorize => [:notice]
 
 enable :sessions
 set :session_secret, "totally secret like for real"
@@ -43,21 +46,21 @@ class BookmarkManager < Sinatra::Application
 	end
 
 	get '/users/new' do
+		@user = User.new
 		erb :"users/new"
 	end
 
 	post '/users' do
-		@user = User.new(:email => params[:email],
-								:password => params[:password],
-								:password_confirmation => params[:password_confirmation])
-
-		if @user.save
-	    	session[:user_id] = @user.id
-    		redirect to('/')
-	  	else
-	    	# flash.now[:errors] = @user.errors.full_messages
-	    	erb :"users/new"
-	  	end
+  	user = User.new(:email => params[:email], 
+             			 :password => params[:password],
+             			 :password_confirmation => params[:password_confirmation])  
+  	if user.save
+  		session[:user_id] = user.id
+  		redirect to('/')
+		else
+  		flash[:notice] = "Sorry, your passwords don't match"
+  		erb :"users/new"
+		end
 	end
 end
 
