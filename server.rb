@@ -20,16 +20,17 @@ use Rack::Flash, :accessorize => [:notice]
 enable :sessions
 set :session_secret, "totally secret like for real"
 
-def self.authenticate(email, password)
-  user = first(:email => email)
-  if user && BCrypt::Password.new(user.password_digest) == password
-   	user
- 	else
-   	nil
- 	end
-end
 
 class BookmarkManager < Sinatra::Application
+
+	def self.authenticate(email, password)
+  	user = first(:email => email)
+  	if user && BCrypt::Password.new(user.password_digest) == password
+   		user
+ 		else
+  	 	nil
+ 		end
+	end
 
 	get '/' do
 		@links = Link.all
