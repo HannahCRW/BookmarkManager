@@ -23,15 +23,6 @@ set :session_secret, "totally secret like for real"
 
 class BookmarkManager < Sinatra::Application
 
-	def self.authenticate(email, password)
-  	user = first(:email => email)
-  	if user && BCrypt::Password.new(user.password_digest) == password
-   		user
- 		else
-  	 	nil
- 		end
-	end
-
 	get '/' do
 		@links = Link.all
 		erb :index
@@ -89,6 +80,12 @@ class BookmarkManager < Sinatra::Application
     	erb :"sessions/new"
   	end
 	end	
+
+	delete '/sessions' do
+		flash[:notice] = "Goodbye!"
+		session[:user_id] = nil
+		redirect to('/')
+	end
 end
 
 helpers do
