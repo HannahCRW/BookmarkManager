@@ -86,6 +86,15 @@ class BookmarkManager < Sinatra::Application
 		session[:user_id] = nil
 		redirect to('/')
 	end
+
+	get '/users/reset_password' do
+		erb :"users/reset_password"
+	end
+
+	post '' do
+		#
+		redirect to('/users/new')
+	end
 end
 
 helpers do

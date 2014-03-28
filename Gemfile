@@ -5,7 +5,7 @@ gem 'dm-postgres-adapter'
 gem 'sinatra'
 gem 'bcrypt-ruby'
 gem 'rack-flash3'
-gem 'sinatra-partial'
+gem 'sinatra-partials'
 
 group :development, :test do
 	gem 'rspec'
